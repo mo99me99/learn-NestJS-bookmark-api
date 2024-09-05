@@ -1,0 +1,15 @@
+### POST /bookmarks : create a bookmark
+POST http://localHost:3000/bookmarks HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU1MzI2NjcsImV4cCI6MTcyNTUzMzU2N30.hzDzYQNIo6gWUOQCw7m6hFzhb6XquvUzsCzuDKBA8Dk
+Content-Type: application/json
+
+{
+  "link":"yahoo.com",
+  "title":"yahoo",
+  "description":"web search"
+}
+
+
+###
+GET http://localHost:3000/bookmarks/3 HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU1MzI2NjcsImV4cCI6MTcyNTUzMzU2N30.hzDzYQNIo6gWUOQCw7m6hFzhb6XquvUzsCzuDKBA8Dk

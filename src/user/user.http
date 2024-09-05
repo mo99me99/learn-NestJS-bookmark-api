@@ -1,0 +1,3 @@
+### 
+GET http://localHost:3000/user/me HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjUzOTc3NDEsImV4cCI6MTcyNTM5ODY0MX0.5wTLFzpFZH-by9m4BctQkNGRADFZkKezm4xoAhl40iU

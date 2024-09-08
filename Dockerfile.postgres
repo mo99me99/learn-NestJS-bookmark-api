@@ -1,0 +1,11 @@
+# Use official PostgreSQL image
+FROM postgres:13
+
+# Set environment variables used in prisma service
+ENV POSTGRES_DB = databasename 
+ENV POSTGRES_USER = username
+ENV POSTGRES_PASSWORD = password
+
+# Expose the PostgreSQL port
+EXPOSE 5432
+# CMD [ "echo "****"" ]

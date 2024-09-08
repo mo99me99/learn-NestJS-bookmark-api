@@ -9,7 +9,7 @@ export class BookmarkService {
   constructor(private prisma: PrismaService) {}
 
   getBookmarks(userId: number) {
-    const bookmarks = this.prisma.bookmark.findMany({
+    return this.prisma.bookmark.findMany({
       where: {
         userId: userId,
       },
@@ -36,7 +36,7 @@ export class BookmarkService {
     bookmarkId: number,
     dto: EditBookmarkDto,
   ) {
-    const bookmark: Bookmark = await this.prisma.bookmark.findUnique({
+    const bookmark:Bookmark = await this.prisma.bookmark.findUnique({
       where: {
         id: bookmarkId,
       },
@@ -54,10 +54,25 @@ export class BookmarkService {
     });
   }
 
-  deleteBookmarkById(userId: number, bookmarkId: number) {
-    return this.prisma.bookmark.delete({
+  async deleteBookmarkById(
+    userId: number,
+    bookmarkId: number,
+  ) {
+    const bookmark =
+      await this.prisma.bookmark.findUnique({
+        where: {
+          id: bookmarkId,
+        },
+      });
+
+    // check if user owns the bookmark
+    if (!bookmark || bookmark.userId !== userId)
+      throw new ForbiddenException(
+        'Access to resources denied',
+      );
+
+    await this.prisma.bookmark.delete({
       where: {
-        userId: userId,
         id: bookmarkId,
       },
     });

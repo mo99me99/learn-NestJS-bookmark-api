@@ -1,6 +1,6 @@
 ### POST /bookmarks : create a bookmark
 POST http://localHost:3000/bookmarks HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU1MzI2NjcsImV4cCI6MTcyNTUzMzU2N30.hzDzYQNIo6gWUOQCw7m6hFzhb6XquvUzsCzuDKBA8Dk
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU3ODk4NDgsImV4cCI6MTcyNTc5MDc0OH0.2UQL7p0HB_huC4L3G0MeMIcj_DCcD6hmrSIWWSIn8DA
 Content-Type: application/json
 
 {
@@ -11,5 +11,5 @@ Content-Type: application/json
 
 
 ###
-GET http://localHost:3000/bookmarks/3 HTTP/1.1
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU1MzI2NjcsImV4cCI6MTcyNTUzMzU2N30.hzDzYQNIo6gWUOQCw7m6hFzhb6XquvUzsCzuDKBA8Dk
+GET http://localHost:3000/bookmarks/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU3ODk4NDgsImV4cCI6MTcyNTc5MDc0OH0.2UQL7p0HB_huC4L3G0MeMIcj_DCcD6hmrSIWWSIn8DA

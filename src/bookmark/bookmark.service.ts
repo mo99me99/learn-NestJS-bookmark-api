@@ -18,18 +18,11 @@ export class BookmarkService {
     });
   }
   async getAllUsersWithBookmarks() {
-    const users = await this.prisma.user.findMany();
-    const userWtihBookmarks = await Promise.all(
-      users.map(async (user) => {
-        const bookmarks = await this.prisma.bookmark.findMany({
-          where: {
-            userId: user.id,
-          },
-        });
-        return { ...user, bookmarks };
-      }),
-    );
-    return userWtihBookmarks;
+    const usersWithBookmarks = this.prisma.user.findMany({
+      select: { Bookmarks: true, firstName: true, lastName: true, id: true, email:true },
+    });
+
+    return usersWithBookmarks;
   }
 
   createBookmark(userId: number, dto: createBookmarkDto) {

@@ -13,3 +13,9 @@ Content-Type: application/json
 ###
 GET http://localHost:3000/bookmarks/ HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU3ODk4NDgsImV4cCI6MTcyNTc5MDc0OH0.2UQL7p0HB_huC4L3G0MeMIcj_DCcD6hmrSIWWSIn8DA
+
+
+
+###
+GET http://localHost:3000/bookmarks/test HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjUsImVtYWlsIjoidGVzdDVAZmFrZS5jb20iLCJpYXQiOjE3MjU4Njg5NDAsImV4cCI6MTcyNTg2OTg0MH0.-AH2ZGArjJdF9isnk__QlSrYlcr9VIZWIySpo9At_Vo

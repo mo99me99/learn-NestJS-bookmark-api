@@ -10,7 +10,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - '5432:5432'
 
   app:
     build: .
@@ -18,7 +18,7 @@ services:
     environment:
       DATABASE_URL: postgres://username:pass@db:5432/database
     ports:
-      - "3000:3000"
+      - '3333:3333'
     depends_on:
       - db
 

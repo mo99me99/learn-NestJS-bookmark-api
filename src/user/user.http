@@ -1,10 +1,10 @@
 ### 
-GET http://localHost:3000/users/me HTTP/1.1
+GET http://localHost:3333/users/me HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjUzOTc3NDEsImV4cCI6MTcyNTM5ODY0MX0.5wTLFzpFZH-by9m4BctQkNGRADFZkKezm4xoAhl40iU
 
 
 ### edit current user
-PATCH http://localHost:3000/users/edit HTTP/1.1
+PATCH http://localHost:3333/users/edit HTTP/1.1
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdDJAZmFrZS5jb20iLCJpYXQiOjE3MjU1Mjg1MjEsImV4cCI6MTcyNTUyOTQyMX0.FHhEyuyYzd0RrqicmFDxgmKfouZUH6c6CgEWa5Q8_c8
 Content-Type: application/json
 

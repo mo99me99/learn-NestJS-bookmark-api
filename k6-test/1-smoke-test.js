@@ -17,8 +17,8 @@ export const options = {
 
 export default function () {
   const data = {
-    email: `fake${Math.random()}@test.com`,
-    password: `pas${Math.random()}`,
+    email: `fakee${Math.random()}@test.com`,
+    password: `pass${Math.random()}`,
   };
   let loginRes = http.post(`${BASE_URL}/auth/signup`, JSON.stringify(data), {
     headers: { 'Content-Type': 'application/json' },

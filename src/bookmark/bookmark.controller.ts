@@ -25,6 +25,12 @@ export class BookmarkController {
   getBookmarks(@GetUser('id') userId) {
     return this.bookmarkService.getBookmarks(userId);
   }
+  
+  
+  @Get('/test')
+  getAllUsersWithBookmarks(){
+    return this.bookmarkService.getAllUsersWithBookmarks()
+  }
 
   @Get('/:id')
   getBookmarkById(@GetUser('id') userId, @Param('id') bookmarkId) {
